@@ -11,37 +11,58 @@
 
 <body>
     <main>
-        <section class=""> 
-            <header class="">
+        <section class="inputSection">
+            <header class="inputSection-header">
+
                 <img src="./assets/Krypto Logo.png" alt="">
                 <h1>Krypto Text</h1>
-                <nav>
+
+                <nav class="inputSection-headerLinks">
                     <a href="https://www.linkedin.com/in/tauan-benevides/"> <img src="./assets/linkdin icon.svg"
                             alt=""></a>
                     <a href="https://github.com/tauan-benevides"> <img src="./assets/github icon.svg" alt=""></a>
                 </nav>
             </header>
 
-            <div class="">
-                <textarea name="" id=""></textarea>
+            <div class="inputSection-content">
+                <textarea placeholder="Digite seu texto..." id="text-input"></textarea>
 
-                <div class="">
-                    <img src="./assets/exclamacao icon.svg" alt="">
-                    <p>Apenas letras minúsculas e sem acento.</p>
-                </div>
 
-                <div class="">
-                    <button>Criptografar</button>
-                    <button>Descriptografar</button>
+                <div class="inputSection-contentActionBar">
+                    <div class="inputSection-contentActionBar-info">
+                        <img src="./assets/exclamacao icon.svg" alt="">
+                        <p>Apenas letras minúsculas e sem acento.</p>
+                    </div>
+
+                    <div class="inputSection-contentActionBar-buttons">
+                        <button id="btn-criptografar" onclick="criptografar()">Criptografar</button>
+                        <button id="btn-descriptografar" onclick="descriptografar()">Descriptografar</button>
+                    </div>
                 </div>
 
                 <img src="./assets/krypto hero.png" alt="">
             </div>
-
         </section>
 
 
-        <section></section>
+        <section class="outputSection">
+            <div class="outputSection-content">
+
+                <img src="./assets/Krypto Output.png" alt="">
+
+                <div class="outputSection-contentInfo">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+
+                <div class="outputSection-contentResultOutput">
+                    <textarea name="" id=""></textarea>
+                    <button id="btn-copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </div>
+
+        </section>
+
     </main>
 </body>
 
