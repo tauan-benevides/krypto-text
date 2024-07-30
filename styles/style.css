@@ -11,3 +11,55 @@ body {
     background-image: linear-gradient(180deg, #E7F7B7, #CFE7B7, #B7D7B7, #9BCFC7, #7FC7D7);
 }
 
+main {}
+
+.inputSection {}
+
+.inputSection-header {}
+
+.inputSection-header img {}
+
+.inputSection-header h1 {}
+
+.inputSection-headerLinks {}
+
+.inputSection-content {}
+
+.text-input {}
+
+.text-input::placeholder {}
+
+.inputSection-contentActionBar {}
+
+.inputSection-contentActionBar-info {}
+
+.inputSection-contentActionBar-info img {}
+
+.inputSection-contentActionBar-info p {}
+
+.inputSection-contentActionBar-buttons {}
+
+.btn-criptografar,
+.btn-descriptografar {}
+
+.inputSection-contentImg {}
+
+.outputSection {}
+
+.outputSection-content {}
+
+.outputSection-content img {}
+
+.outputSection-contentInfo {}
+
+.outputSection-contentInfo h2 {}
+
+.outputSection-contentInfo p {}
+
+.outputSection-contentResultOutput {
+    display: none;
+}
+
+.text-output {}
+
+.btn-copiar {}
