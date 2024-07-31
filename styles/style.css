@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Calistoga&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Andika", sans-serif;
+    font-weight: 400;
 }
 
 body {
     width: 100vw;
     height: 100vh;
 
-    background-image: linear-gradient(180deg, #E7F7B7, #CFE7B7, #B7D7B7, #9BCFC7, #7FC7D7);
+    background-image: linear-gradient(45deg, #0130B2, #010193, #010075, #040637, #020202);
 }
 
 main {
@@ -38,6 +43,12 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
 
@@ -46,12 +57,22 @@ main {
 } */
 
 .inputSection-header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+
     text-transform: uppercase;
     writing-mode: vertical-lr;
     text-orientation: upright;
 
     margin-top: 30%;
+
+    background-image:  linear-gradient( 95deg, #F20505, #F2E205 );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
 
 }
 
@@ -65,13 +86,10 @@ main {
 
     gap: 10%;
     margin-bottom: 30%;
-
 }
 
 .inputSection-headerLinks img {
     width: 100%;
-
-
 }
 
 .inputSection-content {
@@ -82,17 +100,31 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 
-    gap: 10%;
+    gap: 5%;
     padding: 5% 0 5% 5%;
 }
 
 .text-input {
     width: 75%;
     height: 50%;
+
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: left;
+    color: #ECECEE;
+
+    border: none;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+
 }
 
-.text-input::placeholder {}
+.text-input::placeholder {
+    color: #FFD51E;
+}
 
 .inputSection-contentActionBar {
 
@@ -110,6 +142,8 @@ main {
 
     display: flex;
     flex-direction: row;
+    align-items: center;
+
     gap: 8px;
     margin-bottom: 8px;
 
@@ -127,6 +161,13 @@ main {
 
 .inputSection-contentActionBar-info p {
     width: 100%;
+
+    font-size: 0.75rem;
+    line-height: 1.13rem;
+    text-align: left;
+
+    color: #ECECEE;
+
 }
 
 .inputSection-contentActionBar-buttons {
@@ -141,6 +182,24 @@ main {
 .btn-descriptografar {
     width: 50%;
     height: 68px;
+
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    
+    color: #ECECEE;
+
+    padding: 24px;
+    gap: 8px;
+    border-radius: 24px;
+
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+
+    border: 1px solid #ECECEE;
+
 }
 
 .btn-criptografar {}
@@ -148,9 +207,8 @@ main {
 .btn-descriptografar {}
 
 .inputSection-contentImg {
-    margin-top: 30px;
-    width: 100%;
-
+   width: 70%;
+   
 }
 
 
@@ -168,7 +226,12 @@ main {
 
 
 .outputSection-content {
-    background-color: white;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid #ECECEE;
 
     width: 400px;
     height: 95%;
@@ -187,6 +250,7 @@ main {
 }
 
 .outputSection-content img {
+    display: none;
     width: 100%;
     padding: 0 32px 0 32px;
     
@@ -195,20 +259,40 @@ main {
 .outputSection-contentInfo {
     width: 100%;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     text-align: center;
     gap: 8px;
+
 }
 
-.outputSection-contentInfo h2 {}
+.outputSection-contentInfo h2 {
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-align: center;
 
-.outputSection-contentInfo p {}
+    color: #ECECEE;
+}
+
+.outputSection-contentInfo p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #ECECEE;
+
+}
 
 .outputSection-contentResultOutput {
-    display: none;
+    display: flex;
 }
 
-.text-output {}
+.text-output {
 
-.btn-copiar {}
+}
+
+.btn-copiar {
+
+}
