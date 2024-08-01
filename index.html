@@ -13,22 +13,16 @@
     <main>
         <section class="inputSection">
             <header class="inputSection-header">
-
-                <!-- <img src="./assets/KryptoText Logo.png" alt=""> -->
                 <h1>Krypto Text</h1>
-
                 <nav class="inputSection-headerLinks">
                     <a href="https://www.linkedin.com/in/tauan-benevides/"> <img src="./assets/Linkdin Icon.svg"
                             alt=""></a>
                     <a href="https://github.com/tauan-benevides"> <img src="./assets/GitHub Icon.svg" alt=""></a>
                 </nav>
-
             </header>
 
             <div class="inputSection-content">
                 <textarea class="text-input" placeholder="Digite seu texto..." id="text-input"></textarea>
-
-
                 <div class="inputSection-contentActionBar">
                     <div class="inputSection-contentActionBar-info">
                         <img src="./assets/Simbolo de Exclamacao.svg" alt="">
@@ -41,33 +35,24 @@
                         <button class="btn-descriptografar" id="btn-descriptografar"
                             onclick="descriptografar()">Descriptografar</button>
                     </div>
-
-                    
                 </div>
-
                 <img class="inputSection-contentImg" src="./assets/Krypto SuperHero.png" alt="" onclick="playAudio()">
                 <audio id="audio" src="./assets/Krypto Music.mp3"></audio>
-
             </div>
         </section>
 
-
         <section class="outputSection">
             <div class="outputSection-content">
-
                 <img src="./assets/Krypto Output Image.png" alt="">
-
                 <div class="outputSection-contentInfo">
                     <h2>Nenhuma mensagem encontrada</h2>
                     <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </div>
-
                 <div class="outputSection-contentResultOutput">
                     <textarea class="text-output" id="text-output" readonly></textarea>
                     <button class="btn-copiar" id="btn-copiar" onclick="copiar()">Copiar</button>
                 </div>
             </div>
-
         </section>
 
     </main>
