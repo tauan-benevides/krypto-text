@@ -26,7 +26,7 @@
                 <div class="inputSection-contentActionBar">
                     <div class="inputSection-contentActionBar-info">
                         <img src="./assets/Simbolo de Exclamacao.svg" alt="">
-                        <p>Apenas letras minúsculas e sem acento.</p>
+                        <p id="inputInfo">Apenas letras minúsculas e sem acento.</p>
                     </div>
 
                     <div class="inputSection-contentActionBar-buttons">
@@ -43,13 +43,13 @@
 
         <section class="outputSection">
             <div class="outputSection-content">
-                <img class="outputSection-contentImg1" src="./assets/Krypto Output Image.png" alt="">
-                <img class="outputSection-contentImg2" src="./assets/Krypto Ouput Image 2.png" alt="">
-                <div class="outputSection-contentInfo">
-                    <h2>Nenhuma mensagem encontrada</h2>
-                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <img id="outputImg1" class="outputSection-contentImg1" src="./assets/Krypto Output Image.png" alt="">
+                <img id="outputImg2" class="outputSection-contentImg2" src="./assets/Krypto Ouput Image 2.png" alt="">
+                <div id="outputInfoTexts" class="outputSection-contentInfo" >
+                    <h2 id="titleOutput">Nenhuma mensagem encontrada</h2>
+                    <p id="paragraphOutput">Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </div>
-                <div class="outputSection-contentResultOutput">
+                <div id="outputResult" class="outputSection-contentResultOutput">
                     <textarea class="text-output" id="text-output" readonly></textarea>
                     <button class="btn-copiar" id="btn-copiar" onclick="copiar()">Copiar</button>
                 </div>
