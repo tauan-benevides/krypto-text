@@ -256,11 +256,16 @@ main {
     border-top-color: #F20505;
 }
 
-.outputSection-content img {
+.outputSection-contentImg1 {
+    display: none;
+    width: 100%;
+    padding: 0 32px 0 32px;
+}
+
+.outputSection-contentImg2 {
     display: flex;
     width: 100%;
     padding: 0 32px 0 32px;
-
 }
 
 .outputSection-contentInfo {
