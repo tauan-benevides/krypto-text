@@ -24,15 +24,14 @@ function criptografar() {
 
   if (!InputRegexText.test(input)) {
     inputInvalido();
-    playAudio();
-    
+
   } else {
     inputCriptografado = input
-    .replace(/e/g, "enter")
-    .replace(/i/g, "imes")
-    .replace(/a/g, "ai")
-    .replace(/o/g, "ober")
-    .replace(/u/g, "ufat");
+      .replace(/e/g, "enter")
+      .replace(/i/g, "imes")
+      .replace(/a/g, "ai")
+      .replace(/o/g, "ober")
+      .replace(/u/g, "ufat");
 
     exibirResultado();
   }
@@ -50,6 +49,8 @@ function inputInvalido() {
   outputResult.style.display = "none";
   inputInfo.style.color = "#F2E205";
 
+  playErroSound();
+  
   return;
 }
 
@@ -63,20 +64,20 @@ function exibirResultado() {
   outputInfo.img1.style.display = "none";
   outputInfo.img2.style.display = "none";
   inputInfo.style.color = "#ECECEE";
-
+  playKriptoMusic();
   return;
 }
 
 
-// Musica abertura ao cliccar
-function playAudio(){
-    play()
-  }
- function play() {
-   var audio = document.getElementById("audio");
-   audio.play();
- }
+// TOCAR KRYPTO MUSIC
+function playKriptoMusic() {
+  let kriptoMusic = document.getElementById("kryptoMusic");
+  kriptoMusic.play();
+}
 
+// TOCAR ERRO SOUND
+function playErroSound() {
+  let erroSound = document.getElementById("erroSound");
+  erroSound.play();
+}
 
-
- 
