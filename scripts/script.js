@@ -1,6 +1,8 @@
 const inputText = document.getElementById("text-input");
 const outputText = document.getElementById("text-output");
-const InputRegexText = /^[a-z\s]+$/;
+
+// Verifica se o input contém apenas letras minúsculas e espaços, mas não permite apenas espaços e caaracteres especiaIS
+const InputRegexText = /^(?!\s*$)[a-z\s]+$/;
 
 const inputInfo = document.getElementById("inputInfo");
 const outputResult = document.getElementById("outputResult");
@@ -15,7 +17,6 @@ const outputInfo = {
 
 let inputCriptografado = "";
 const outputInfoTexts = document.getElementById("outputInfoTexts");
-
 
 // CRIPTOGRAFIA
 function criptografar() {
@@ -34,8 +35,19 @@ function criptografar() {
       .replace(/u/g, "ufat");
 
     exibirResultado();
+    limparCampo();
   }
 }
+
+// function descriptografar() {
+//   inputCriptografado 
+// }
+
+
+function limparCampo (){
+  inputText.value = "";
+}
+
 
 // INVALIDAÇAO DO INPUT
 function inputInvalido() {
@@ -50,7 +62,7 @@ function inputInvalido() {
   inputInfo.style.color = "#F2E205";
 
   playErroSound();
-  
+
   return;
 }
 
