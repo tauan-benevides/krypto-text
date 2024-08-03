@@ -15,7 +15,7 @@ const outputInfo = {
   img2: document.getElementById("outputImg2"),
 }
 
-let inputCriptografado = "";
+let inputDescriptografado = "";
 const outputInfoTexts = document.getElementById("outputInfoTexts");
 
 // CRIPTOGRAFIA
@@ -27,27 +27,36 @@ function criptografar() {
     inputInvalido();
 
   } else {
-    inputCriptografado = input
+    let inputCriptografado = input
       .replace(/e/g, "enter")
       .replace(/i/g, "imes")
       .replace(/a/g, "ai")
       .replace(/o/g, "ober")
       .replace(/u/g, "ufat");
 
-    exibirResultado();
+    exibirResultado(inputCriptografado);
     limparCampo();
   }
 }
 
-// function descriptografar() {
-//   inputCriptografado 
-// }
+// DESCRIPTOGRAFIA
+function descriptografar() {
+  let input = inputText.value;
+  let inputDescriptografado = input
+  .replace(/enter/g, "e")
+  .replace(/imes/g, "i")
+  .replace(/ai/g, "a")
+  .replace(/ober/g, "o")
+  .replace(/ufat/g, "u");
 
-
-function limparCampo (){
-  inputText.value = "";
+  exibirResultado(inputDescriptografado);
+  limparCampo();
 }
 
+
+function limparCampo() {
+  inputText.value = "";
+}
 
 // INVALIDAÇAO DO INPUT
 function inputInvalido() {
@@ -66,10 +75,9 @@ function inputInvalido() {
   return;
 }
 
-
 // EXIBIR RESULTADO
-function exibirResultado() {
-  outputText.innerHTML = inputCriptografado;
+function exibirResultado(texto) {
+  outputText.value = texto;
 
   outputResult.style.display = "flex";
   outputInfoTexts.style.display = "none";
@@ -79,7 +87,6 @@ function exibirResultado() {
   playKriptoMusic();
   return;
 }
-
 
 // TOCAR KRYPTO MUSIC
 function playKriptoMusic() {
