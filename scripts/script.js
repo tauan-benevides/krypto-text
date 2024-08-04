@@ -42,15 +42,21 @@ function criptografar() {
 // DESCRIPTOGRAFIA
 function descriptografar() {
   let input = inputText.value;
-  let inputDescriptografado = input
-    .replace(/enter/g, "e")
-    .replace(/imes/g, "i")
-    .replace(/ai/g, "a")
-    .replace(/ober/g, "o")
-    .replace(/ufat/g, "u");
 
-  exibirResultado(inputDescriptografado);
-  limparCampo();
+  if (!InputRegexText.test(input)) {
+    inputInvalido();
+
+  } else {
+    let inputDescriptografado = input
+      .replace(/enter/g, "e")
+      .replace(/imes/g, "i")
+      .replace(/ai/g, "a")
+      .replace(/ober/g, "o")
+      .replace(/ufat/g, "u");
+
+    exibirResultado(inputDescriptografado);
+    limparCampo();
+  }
 }
 
 function copiar() {
