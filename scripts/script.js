@@ -43,16 +43,39 @@ function criptografar() {
 function descriptografar() {
   let input = inputText.value;
   let inputDescriptografado = input
-  .replace(/enter/g, "e")
-  .replace(/imes/g, "i")
-  .replace(/ai/g, "a")
-  .replace(/ober/g, "o")
-  .replace(/ufat/g, "u");
+    .replace(/enter/g, "e")
+    .replace(/imes/g, "i")
+    .replace(/ai/g, "a")
+    .replace(/ober/g, "o")
+    .replace(/ufat/g, "u");
 
   exibirResultado(inputDescriptografado);
   limparCampo();
 }
 
+function copiar() {
+  let output = outputText.value;
+  navigator.clipboard.writeText(output);
+
+  Swal.fire({
+    title: "Bom trabalho!",
+    text: "Texto copiado para a área de transferência com sucesso.",
+    icon: "success"
+  });
+
+  reset();
+}
+
+// VOLTA AO DEFAULT DA PAGINA
+function reset() {
+
+  outputResult.style.display = "none";
+  outputInfoTexts.style.display = "flex";
+  outputInfo.img1.style.display = "flex";
+  outputInfo.img2.style.display = "none";
+  inputInfo.style.color = "#ECECEE";
+  limparCampo();
+}
 
 function limparCampo() {
   inputText.value = "";
