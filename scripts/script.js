@@ -2,7 +2,7 @@ const inputText = document.getElementById("text-input");
 const outputText = document.getElementById("text-output");
 
 // Verifica se o input contém apenas letras minúsculas e espaços, mas não permite apenas espaços e caaracteres especiaIS
-const InputRegexText = /^(?!\s*$)[a-z\s]+$/;
+const InputRegexText = /^(?!\s*$)[a-z\s.,!?]+$/;
 
 const inputInfo = document.getElementById("inputInfo");
 const outputResult = document.getElementById("outputResult");
