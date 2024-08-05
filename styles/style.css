@@ -1,81 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Andika&family=Calistoga&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Andika", sans-serif;
-    font-weight: 400;
+    font-family: "Noto Serif", serif;
+}
+
+:root {
+    --black-color: #0D0C07;
+    --gray-color: #362F40;
+    --white-color: #F2F2F0;
+    --red-color: #F20505;
+    --yellow-color: #F2E205;
+
+    --font-weight-normal: 400;
+    --font-weight-bold: 600;
 }
 
 body {
     width: 100vw;
     height: 100vh;
-
-    background-image: linear-gradient(45deg, #0130B2, #010193, #010075, #040637, #020202);
+    background-image: linear-gradient(45deg, #E7F7B7, #CFE7B7, #B7D7B7, #9BCFC7, #7FC7D7);
 }
 
 main {
     width: 100%;
     height: 100vh;
-
     display: flex;
     flex-direction: row;
     gap: 5%;
 }
 
 /* RIGHT AREA */
-
 .inputSection {
     width: 55%;
-
     display: flex;
     flex-direction: row;
 }
 
 .inputSection-header {
     width: 15%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
-
-    background: rgba(255, 255, 255, 0.09);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-
+    border-right: 3px solid var(--black-color);
 }
 
 .inputSection-header h1 {
     font-size: 3rem;
-    font-family: "Calistoga", serif;
-    font-weight: 400;
-    font-style: normal;
-
+    font-weight: var(--font-weight-bold);
     text-transform: uppercase;
     writing-mode: vertical-lr;
     text-orientation: upright;
-
     margin-top: 30%;
-
-    background-image: linear-gradient(180deg, #F20505, #F2E205);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: var(--black-color);
 }
 
 .inputSection-headerLinks {
     width: 100%;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     gap: 10%;
     margin-bottom: 30%;
 }
@@ -87,12 +75,10 @@ main {
 .inputSection-content {
     width: 100%;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
     gap: 5%;
     padding: 5% 0 5% 5%;
 }
@@ -100,45 +86,35 @@ main {
 .text-input {
     width: 75%;
     height: 50%;
-
     font-size: 2rem;
+    font-weight: var(--font-weight-normal);
     line-height: 3rem;
     text-align: left;
-    color: #ECECEE;
-
+    color: var(--gray-color);
     border: none;
     background-color: transparent;
     outline: none;
     resize: none;
-
 }
 
 .text-input::placeholder {
-    color: #ECECEE;
+    color: var(--gray-color);
 }
 
 .inputSection-contentActionBar {
-
     width: 75%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .inputSection-contentActionBar-info {
     width: 100%;
-
-
     display: flex;
     flex-direction: row;
     align-items: center;
-
     gap: 8px;
     margin-bottom: 8px;
-
-
 }
 
 .inputSection-contentActionBar-info img {
@@ -146,24 +122,19 @@ main {
     max-height: 16px;
     width: 100%;
     height: 100%;
-
-
 }
 
 .inputSection-contentActionBar-info p {
     width: 100%;
-
     font-size: 0.75rem;
+    font-weight: var(--font-weight-normal);
     line-height: 1.13rem;
     text-align: left;
-
-    color: #ECECEE;
-
+    color: var(--gray-color);
 }
 
 .inputSection-contentActionBar-buttons {
     width: 100%;
-
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -174,30 +145,27 @@ main {
     width: 50%;
     height: 68px;
 
-    background: rgba(255, 255, 255, 0.06);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-
-    color: #ECECEE;
+    background-color: #7FC7D7;
+    color: var(--black-color);
 
     padding: 24px;
     gap: 8px;
-    border-radius: 24px;
+    border-radius: 13px;
 
     font-size: 1rem;
     line-height: 1.25rem;
     text-align: center;
 
-    border: 1px solid #ECECEE;
+    border: 1px solid #F2E205;
 
     transition: transform 200ms linear;
 }
 
 .btn-criptografar:hover {
     transform: scale(1.05);
-    border: 2px solid #F20505;
+
     cursor: pointer;
+    box-shadow: 1px 3px #F2E205;
 }
 
 .btn-descriptografar:hover {
@@ -357,11 +325,11 @@ main {
 }
 
 @media (max-width: 1024px) {
-    .inputSection{
+    .inputSection {
         flex-direction: column;
     }
 
-    .inputSection-header{
+    .inputSection-header {
         padding: 0;
         margin: 0;
         width: 100%;
@@ -386,12 +354,14 @@ main {
         font-size: 2.5rem;
 
     }
+
     .inputSection-headerLinks {
         padding: 0;
         margin: 0;
         width: 20%;
     }
-.inputSection-contentImg{
-    display: none;
-}
+
+    .inputSection-contentImg {
+        display: none;
+    }
 }
