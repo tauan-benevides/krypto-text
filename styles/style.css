@@ -9,7 +9,7 @@
 
 :root {
     --black-color: #0D0C07;
-    --gray-color: #362F40;
+    --gray-color: #27222D;
     --white-color: #F2F2F0;
     --red-color: #F20505;
     --yellow-color: #F2E205;
@@ -21,7 +21,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(45deg, #E7F7B7, #CFE7B7, #B7D7B7, #9BCFC7, #7FC7D7);
+    background-image: linear-gradient(to top, #87CEEB, #70BCEB, #5CA8EB, #3C8DED, #1A66E1, #0047AB);
 }
 
 main {
@@ -46,6 +46,7 @@ main {
     align-items: center;
     justify-content: space-between;
     border-right: 3px solid var(--black-color);
+    background: rgba(255, 255, 255, 0.13);
 }
 
 .inputSection-header h1 {
@@ -90,7 +91,7 @@ main {
     font-weight: var(--font-weight-normal);
     line-height: 3rem;
     text-align: left;
-    color: var(--gray-color);
+    color: var(--white-color);
     border: none;
     background-color: transparent;
     outline: none;
@@ -98,7 +99,7 @@ main {
 }
 
 .text-input::placeholder {
-    color: var(--gray-color);
+    color: var(--white-color);
 }
 
 .inputSection-contentActionBar {
@@ -130,7 +131,7 @@ main {
     font-weight: var(--font-weight-normal);
     line-height: 1.13rem;
     text-align: left;
-    color: var(--gray-color);
+    color: var(--black-color);
 }
 
 .inputSection-contentActionBar-buttons {
@@ -141,37 +142,37 @@ main {
 }
 
 .btn-criptografar,
-.btn-descriptografar {
+.btn-descriptografar,
+.btn-copiar {
     width: 50%;
     height: 68px;
-
-    background-color: #7FC7D7;
     color: var(--black-color);
+    background-color: var(--white-color);
+    box-shadow: 1px 3px var(--gray-color);
 
     padding: 24px;
     gap: 8px;
-    border-radius: 13px;
+    border-radius: 10px;
 
     font-size: 1rem;
     line-height: 1.25rem;
     text-align: center;
 
-    border: 1px solid #F2E205;
+    border: none;
 
     transition: transform 200ms linear;
 }
 
 .btn-criptografar:hover {
     transform: scale(1.05);
-
     cursor: pointer;
-    box-shadow: 1px 3px #F2E205;
+    box-shadow: 1px 3px var(--red-color);
 }
 
 .btn-descriptografar:hover {
     transform: scale(1.05);
-    border: 2px solid #F2E205;
     cursor: pointer;
+    box-shadow: 1px 3px var(--yellow-color);
 }
 
 .inputSection-contentImg {
@@ -186,8 +187,6 @@ main {
 
 
 /* OUTPUT AREA */
-
-
 .outputSection {
     width: 40%;
     display: flex;
@@ -195,34 +194,20 @@ main {
     justify-content: center;
 }
 
-
 .outputSection-content {
-    background: rgba(255, 255, 255, 0.03);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border: 2px solid #ECECEE;
-
-    width: 400px;
+    background: rgba(255, 255, 255, 0.33);
+    box-shadow: 0px 26px 33px -9px #00000033;
+    width: 450px;
     height: 95%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     margin-top: 5%;
     margin-bottom: 5%;
+    margin-right: 33px;
     gap: 10%;
-
-    border-radius: 32px;
-}
-
-
-.outputSection-content:hover {
-    border-color: #F2E205;
-    border-top-color: #F20505;
+    border-radius: 25px;
 }
 
 .outputSection-contentImg1 {
@@ -233,7 +218,7 @@ main {
 
 .outputSection-contentImg2 {
     display: none;
-    width: 100%;
+    width: 95%;
     padding: 0 32px 0 32px;
 }
 
@@ -248,80 +233,47 @@ main {
 }
 
 .outputSection-contentInfo h2 {
-    font-family: "Calistoga", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: var(--black-color);
     font-size: 1.5rem;
     line-height: 1.8rem;
     text-align: center;
-
-    color: #ECECEE;
+    color: var(--black-color);
 }
 
 .outputSection-contentInfo p {
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: center;
-    color: #ECECEE;
-
+    color: var(--black-color);
 }
 
 .outputSection-contentResultOutput {
     width: 100%;
     height: 100%;
-
     display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
     padding: 5%;
 }
 
 .text-output {
     width: 95%;
     height: 85%;
-
     font-size: 2rem;
     line-height: 3rem;
     text-align: left;
-    color: #ECECEE;
-
+    color: var(--gray-color);
     border: none;
     background-color: transparent;
     outline: none;
     resize: none;
-
-}
-
-.btn-copiar {
-    width: 50%;
-    height: 68px;
-
-    background: rgba(255, 255, 255, 0.06);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-
-    color: #ECECEE;
-
-    padding: 24px;
-    gap: 8px;
-    border-radius: 24px;
-
-    font-size: 1rem;
-    line-height: 1.25rem;
-    text-align: center;
-
-    border: 1px solid #ECECEE;
-
-    transition: transform 200ms linear;
 }
 
 .btn-copiar:hover {
     transform: scale(1.05);
-    border: 2px solid #F20505;
     cursor: pointer;
+    box-shadow: 1px 3px var(--red-color);
 }
 
 @media (max-width: 1024px) {

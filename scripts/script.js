@@ -79,7 +79,7 @@ function reset() {
   outputInfoTexts.style.display = "flex";
   outputInfo.img1.style.display = "flex";
   outputInfo.img2.style.display = "none";
-  inputInfo.style.color = "#ECECEE";
+  inputInfo.style.color = "#0D0C07";
   limparCampo();
 }
 
@@ -97,7 +97,7 @@ function inputInvalido() {
   outputInfo.img2.style.display = "flex";
 
   outputResult.style.display = "none";
-  inputInfo.style.color = "#F2E205";
+  inputInfo.style.color = "#F20505";
 
   playErroSound();
 
@@ -112,7 +112,7 @@ function exibirResultado(texto) {
   outputInfoTexts.style.display = "none";
   outputInfo.img1.style.display = "none";
   outputInfo.img2.style.display = "none";
-  inputInfo.style.color = "#ECECEE";
+  inputInfo.style.color = "#0D0C07";
   playKriptoMusic();
   return;
 }
