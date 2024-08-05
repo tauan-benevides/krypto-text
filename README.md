@@ -43,6 +43,6 @@ Por exemplo:
 - **Trello**: Utilizado para organizar e acompanhar o progresso do projeto, seguindo o sistema ágil de desenvolvimento.
 - **HTML**: Estruturação do conteúdo da página.
 - **CSS**: Estilização visual, incluindo layout, cores, fontes e responsividade.
-- **JavaScript**: Implementação da lógica de criptografia/descriptografia e interação com o usuário.
 - **Figma**: Utilizado para criar o design inicial da interface do usuário, garantindo uma experiência visualmente atraente e intuitiva. O design foi baseado em um modelo fornecido pela Alura, com ajustes para diferenciar e dar singularidade ao projeto.
+- **JavaScript**: Implementação da lógica de criptografia/descriptografia e interação com o usuário.
 
