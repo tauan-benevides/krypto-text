@@ -1,7 +1,6 @@
 const inputText = document.getElementById("text-input");
 const outputText = document.getElementById("text-output");
 
-// Verifica se o input contém apenas letras minúsculas e espaços, mas não permite apenas espaços e caaracteres especiaIS
 const InputRegexText = /^(?!\s*$)[a-z\s.,!?]+$/;
 
 const inputInfo = document.getElementById("inputInfo");
@@ -18,7 +17,7 @@ const outputInfo = {
 let inputDescriptografado = "";
 const outputInfoTexts = document.getElementById("outputInfoTexts");
 
-// CRIPTOGRAFIA
+
 function criptografar() {
 
   let input = inputText.value;
@@ -39,7 +38,7 @@ function criptografar() {
   }
 }
 
-// DESCRIPTOGRAFIA
+
 function descriptografar() {
   let input = inputText.value;
 
@@ -72,7 +71,7 @@ function copiar() {
   reset();
 }
 
-// VOLTA AO DEFAULT DA PAGINA
+
 function reset() {
 
   outputResult.style.display = "none";
@@ -89,7 +88,7 @@ function limparCampo() {
   inputText.value = "";
 }
 
-// INVALIDAÇAO DO INPUT
+
 function inputInvalido() {
   outputInfo.title.innerHTML = "Texto inválido";
   outputInfo.paragraph.innerHTML = "Certifique-se de que o texto contém apenas letras minúsculas e sem acentos."
@@ -106,7 +105,7 @@ function inputInvalido() {
   return;
 }
 
-// EXIBIR RESULTADO
+
 function exibirResultado(texto) {
   outputText.value = texto;
 
@@ -119,13 +118,12 @@ function exibirResultado(texto) {
   return;
 }
 
-// TOCAR KRYPTO MUSIC
+
 function playKriptoMusic() {
   let kriptoMusic = document.getElementById("kryptoMusic");
   kriptoMusic.play();
 }
 
-// TOCAR ERRO SOUND
 function playErroSound() {
   let erroSound = document.getElementById("erroSound");
   erroSound.play();
