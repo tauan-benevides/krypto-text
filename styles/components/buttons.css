@@ -1,0 +1,46 @@
+.input-section__btn,
+.output-section__btn {
+    width: 50%;
+    height: 68px;
+    color: var(--black-color);
+    background-color: var(--white-color);
+    box-shadow: 1px 2px var(--gray-color);
+    padding: 24px;
+    gap: 8px;
+    border-radius: 9px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+    border: none;
+    transition: transform 200ms linear;
+}
+
+.input-section__btn--encrypt {
+    border: 1px solid var(--red-color);
+}
+
+.input-section__btn--decrypt {
+    border: 1px solid var(--yellow-color);
+}
+
+.input-section__btn--encrypt:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 1px 3px var(--red-color);
+}
+
+.input-section__btn--decrypt:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 1px 3px var(--yellow-color);
+}
+
+.output-section__btn--copy {
+    border: 1px solid var(--red-color);
+}
+
+.output-section__btn--copy:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 1px 3px var(--red-color);
+}

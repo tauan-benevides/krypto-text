@@ -1,0 +1,44 @@
+/* Estilos de cores */
+body {
+    background-image: linear-gradient(45deg, #032FB2, #0322AE, #010183, #040557, #010834, #02020A);
+    color: var(--white-color);
+}
+
+.input-section__btn,
+.output-section__btn {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    box-shadow: 1px 2px var(--gray-color);
+}
+
+.input-section__btn--encrypt {
+    border: 1px solid var(--red-color);
+}
+
+.input-section__btn--decrypt {
+    border: 1px solid var(--yellow-color);
+}
+
+.input-section__btn--encrypt:hover {
+    box-shadow: 1px 3px var(--red-color);
+}
+
+.input-section__btn--decrypt:hover {
+    box-shadow: 1px 3px var(--yellow-color);
+}
+
+.output-section__btn--copy {
+    border: 1px solid var(--red-color);
+}
+
+.output-section__btn--copy:hover {
+    box-shadow: 1px 3px var(--red-color);
+}
+
+.input-section__text-input::placeholder {
+    color: var(--white-color);
+}
+
+.output-section__text-output {
+    color: var(--gray-color);
+}

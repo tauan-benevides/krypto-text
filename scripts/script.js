@@ -3,62 +3,60 @@ const outputText = document.getElementById("text-output");
 
 const InputRegexText = /^(?!\s*$)[a-z\s.,!?]+$/;
 
-const inputInfo = document.getElementById("inputInfo");
-const outputResult = document.getElementById("outputResult");
+const inputInfo = document.getElementById("input-info");
+const outputResult = document.getElementById("output-result");
 
 const outputInfo = {
-  title: document.getElementById("titleOutput"),
-  paragraph: document.getElementById("paragraphOutput"),
+  title: document.getElementById("title-output"),
+  paragraph: document.getElementById("paragraph-output"),
 
-  img1: document.getElementById("outputImg1"),
-  img2: document.getElementById("outputImg2"),
+  img1: document.getElementById("output-img1"),
+  img2: document.getElementById("output-img2"),
 }
 
 let inputDescriptografado = "";
-const outputInfoTexts = document.getElementById("outputInfoTexts");
+const outputInfoTexts = document.getElementById("output-info");
 
 
-function criptografar() {
-
+function encrypt() {
   let input = inputText.value;
 
   if (!InputRegexText.test(input)) {
-    inputInvalido();
+    invalidInput();
 
   } else {
-    let inputCriptografado = input
+    let inputEncrypted = input
       .replace(/e/g, "enter")
       .replace(/i/g, "imes")
       .replace(/a/g, "ai")
       .replace(/o/g, "ober")
       .replace(/u/g, "ufat");
 
-    exibirResultado(inputCriptografado);
-    limparCampo();
+    displayResult(inputEncrypted);
+    clearField();
   }
 }
 
-
-function descriptografar() {
+function decrypt() {
   let input = inputText.value;
 
   if (!InputRegexText.test(input)) {
-    inputInvalido();
+    invalidInput();
 
   } else {
-    let inputDescriptografado = input
+    let inputDecrypted = input
       .replace(/enter/g, "e")
       .replace(/imes/g, "i")
       .replace(/ai/g, "a")
       .replace(/ober/g, "o")
       .replace(/ufat/g, "u");
 
-    exibirResultado(inputDescriptografado);
-    limparCampo();
+    displayResult(inputDecrypted);
+    clearField();
   }
 }
 
-function copiar() {
+function copy() {
   let output = outputText.value;
   navigator.clipboard.writeText(output);
 
@@ -71,9 +69,7 @@ function copiar() {
   reset();
 }
 
-
 function reset() {
-
   outputResult.style.display = "none";
   outputInfoTexts.style.display = "flex";
   outputInfo.img1.style.display = "flex";
@@ -81,15 +77,15 @@ function reset() {
   inputInfo.style.color = "#F2F2F0";
   outputInfo.title.innerHTML = "Nenhuma mensagem encontrada";
   outputInfo.paragraph.innerHTML = "Digite um texto que você deseja criptografar ou descriptografar."
-  limparCampo();
+  clearField();
 }
 
-function limparCampo() {
+function clearField() {
   inputText.value = "";
 }
 
 
-function inputInvalido() {
+function invalidInput() {
   outputInfo.title.innerHTML = "Texto inválido";
   outputInfo.paragraph.innerHTML = "Certifique-se de que o texto contém apenas letras minúsculas e sem acentos."
 
@@ -100,32 +96,29 @@ function inputInvalido() {
   outputResult.style.display = "none";
   inputInfo.style.color = "#F20505";
 
-  playErroSound();
+  playErrorSound();
 
   return;
 }
 
-
-function exibirResultado(texto) {
-  outputText.value = texto;
+function displayResult(text) {
+  outputText.value = text;
 
   outputResult.style.display = "flex";
   outputInfoTexts.style.display = "none";
   outputInfo.img1.style.display = "none";
   outputInfo.img2.style.display = "none";
   inputInfo.style.color = "#F2F2F0";
-  playKriptoMusic();
+  playKryptoMusic();
   return;
 }
 
-
-function playKriptoMusic() {
-  let kriptoMusic = document.getElementById("kryptoMusic");
-  kriptoMusic.play();
+function playKryptoMusic() {
+  let kryptoMusic = document.getElementById("krypto-music");
+  kryptoMusic.play();
 }
 
-function playErroSound() {
-  let erroSound = document.getElementById("erroSound");
-  erroSound.play();
+function playErrorSound() {
+  let errorSound = document.getElementById("error-sound");
+  errorSound.play();
 }
-

@@ -5,64 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krypto Text</title>
-
-    <link rel="stylesheet" href="./styles/style.css">
+    <meta name="description" content="Krypto Text - Encrypt and decrypt your text easily.">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/typography.css">
+    <link rel="stylesheet" href="./styles/colors.css">
+    <link rel="stylesheet" href="./styles/components/input-section.css">
+    <link rel="stylesheet" href="./styles/components/output-section.css">
+    <link rel="stylesheet" href="./styles/components/buttons.css">
 </head>
 
 <body>
     <main>
-        <section class="inputSection">
-            <header class="inputSection-header">
+        <!-- Input Section -->
+        <section class="input-section">
+            <header class="input-section__header">
                 <h1>Krypto Text</h1>
-                <nav class="inputSection-headerLinks">
-                    <a href="https://www.linkedin.com/in/tauan-benevides/"> <img src="./assets/Linkdin icon.svg"
-                            alt="Logo do Linkdin"></a>
-                    <a href="https://github.com/tauan-benevides"> <img src="./assets/GitHub icon.svg"
-                            alt="Logo do GitHub"></a>
+                <nav class="input-section__nav">
+                    <a href="https://www.linkedin.com/in/tauan-benevides/" aria-label="LinkedIn Profile">
+                        <img src="./assets/linkedin-icon.svg" alt="LinkedIn Logo">
+                    </a>
+                    <a href="https://github.com/tauan-benevides" aria-label="GitHub Profile">
+                        <img src="./assets/github-icon.svg" alt="GitHub Logo">
+                    </a>
                 </nav>
             </header>
 
-            <div class="inputSection-content">
-                <textarea class="text-input" placeholder="Digite seu texto..." id="text-input"></textarea>
-                <div class="inputSection-contentActionBar">
-                    <div class="inputSection-contentActionBar-info">
-                        <img src="./assets/Simbolo de Exclamacao.svg" alt="Simbolo de Exclamacao">
-                        <p id="inputInfo">Apenas letras minúsculas e sem acento.</p>
+            <div class="input-section__content">
+                <textarea class="input-section__text-input" placeholder="Type your text..." id="text-input"
+                    aria-label="Text Input"></textarea>
+                <div class="input-section__action-bar">
+                    <div class="input-section__info">
+                        <img src="./assets/exclamation-symbol.svg" alt="Exclamation Symbol">
+                        <p id="input-info">Only lowercase letters and no accents.</p>
                     </div>
 
-                    <div class="inputSection-contentActionBar-buttons">
-                        <button class="btn-criptografar" id="btn-criptografar"
-                            onclick="criptografar()">Criptografar</button>
-                        <button class="btn-descriptografar" id="btn-descriptografar"
-                            onclick="descriptografar()">Descriptografar</button>
+                    <div class="input-section__buttons">
+                        <button class="input-section__btn input-section__btn--encrypt" id="btn-encrypt"
+                            onclick="encrypt()">Encrypt</button>
+                        <button class="input-section__btn input-section__btn--decrypt" id="btn-decrypt"
+                            onclick="decrypt()">Decrypt</button>
                     </div>
                 </div>
-                <img class="inputSection-contentImg" src="./assets/Krypto SuperHero.png" alt="Personagem Krypto"
-                    onclick="playKriptoMusic()">
+                <img class="input-section__img" src="./assets/krypto-superhero.png" alt="Krypto Character"
+                    onclick="playKryptoMusic()">
             </div>
         </section>
 
-        <section class="outputSection">
-            <div class="outputSection-content">
-                <img id="outputImg1" class="outputSection-contentImg1" src="./assets/Krypto Output Image.png"
-                    alt="Personagem Krypto">
-                <img id="outputImg2" class="outputSection-contentImg2" src="./assets/Krypto Ouput Image 2.png"
-                    alt="Personagem Krypto">
-                <div id="outputInfoTexts" class="outputSection-contentInfo">
-                    <h2 id="titleOutput">Nenhuma mensagem encontrada</h2>
-                    <p id="paragraphOutput">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <!-- Output Section -->
+        <section class="output-section">
+            <div class="output-section__content">
+                <img id="output-img1" class="output-section__img1" src="./assets/krypto-output-image.png"
+                    alt="Krypto Character">
+                <img id="output-img2" class="output-section__img2" src="./assets/krypto-output-image-2.png"
+                    alt="Krypto Character">
+                <div id="output-info" class="output-section__info">
+                    <h2 id="title-output">No message found</h2>
+                    <p id="paragraph-output">Type a text you want to encrypt or decrypt.</p>
                 </div>
-                <div id="outputResult" class="outputSection-contentResultOutput">
-                    <textarea class="text-output" id="text-output" readonly></textarea>
-                    <button class="btn-copiar" id="btn-copiar" onclick="copiar()">Copiar</button>
+                <div id="output-result" class="output-section__result">
+                    <textarea class="output-section__text-output" id="text-output" readonly
+                        aria-label="Output Text"></textarea>
+                    <button class="output-section__btn output-section__btn--copy" id="btn-copy"
+                        onclick="copy()">Copy</button>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <audio id="kryptoMusic" src="./assets/Krypto Music.mp3"></audio>
-    <audio id="erroSound" src="./assets/Audio Erro.mp3"></audio>
+    <audio id="krypto-music" src="./assets/krypto-music.mp3"></audio>
+    <audio id="error-sound" src="./assets/error-sound.mp3"></audio>
 
     <script src="./scripts/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
