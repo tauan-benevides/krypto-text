@@ -46,3 +46,32 @@ Por exemplo:
 - **Figma**: Utilizado para criar o design inicial da interface do usuário, garantindo uma experiência visualmente atraente e intuitiva. O design foi baseado em um modelo fornecido pela Alura, com ajustes para diferenciar e dar singularidade ao projeto.
 - **JavaScript**: Implementação da lógica de criptografia/descriptografia e interação com o usuário.
 
+  ## Estrutura do Projeto
+  
+  krypto-text/
+│
+├── styles/
+│   ├── components/
+│   │   ├── input-section.css
+│   │   ├── output-section.css
+│   │   └── buttons.css
+│   ├── layout.css
+│   ├── typography.css
+│   └── colors.css
+│
+├── scripts/
+│   └── script.js
+│
+├── assets/
+│   ├── linkedin-icon.svg
+│   ├── github-icon.svg
+│   ├── exclamation-symbol.svg
+│   ├── krypto-superhero.png
+│   ├── krypto-output-image.png
+│   ├── krypto-output-image-2.png
+│   ├── krypto-music.mp3
+│   └── error-sound.mp3
+│
+├── index.html
+
+
