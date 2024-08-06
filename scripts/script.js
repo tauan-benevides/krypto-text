@@ -80,6 +80,8 @@ function reset() {
   outputInfo.img1.style.display = "flex";
   outputInfo.img2.style.display = "none";
   inputInfo.style.color = "#0D0C07";
+  outputInfo.title.innerHTML = "Nenhuma mensagem encontrada";
+  outputInfo.paragraph.innerHTML = "Digite um texto que você deseja criptografar ou descriptografar."
   limparCampo();
 }
 
