@@ -78,7 +78,7 @@ function reset() {
   outputInfoTexts.style.display = "flex";
   outputInfo.img1.style.display = "flex";
   outputInfo.img2.style.display = "none";
-  inputInfo.style.color = "#0D0C07";
+  inputInfo.style.color = "#F2F2F0";
   outputInfo.title.innerHTML = "Nenhuma mensagem encontrada";
   outputInfo.paragraph.innerHTML = "Digite um texto que você deseja criptografar ou descriptografar."
   limparCampo();
@@ -113,7 +113,7 @@ function exibirResultado(texto) {
   outputInfoTexts.style.display = "none";
   outputInfo.img1.style.display = "none";
   outputInfo.img2.style.display = "none";
-  inputInfo.style.color = "#0D0C07";
+  inputInfo.style.color = "#F2F2F0";
   playKriptoMusic();
   return;
 }
