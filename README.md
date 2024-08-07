@@ -54,6 +54,7 @@ Por exemplo:
 ## Deploy
 
 O projeto Krypto Text está disponível online e pode ser acessado através do seguinte link:
+https://tauan-benevides.github.io/krypto-text/ .
 
 
 
