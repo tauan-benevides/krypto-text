@@ -32,19 +32,19 @@
             </header>
 
             <div class="input-section__content">
-                <textarea class="input-section__text-input" placeholder="Type your text..." id="text-input"
+                <textarea class="input-section__text-input" placeholder="Digite seu texto..." id="text-input"
                     aria-label="Text Input"></textarea>
                 <div class="input-section__action-bar">
                     <div class="input-section__info">
                         <img src="./assets/exclamation-symbol.svg" alt="Exclamation Symbol">
-                        <p id="input-info">Only lowercase letters and no accents.</p>
+                        <p id="input-info">Apenas letras minúsculas e sem acento.</p>
                     </div>
 
                     <div class="input-section__buttons">
                         <button class="input-section__btn input-section__btn--encrypt" id="btn-encrypt"
-                            onclick="encrypt()">Encrypt</button>
+                            onclick="encrypt()">Criptografar</button>
                         <button class="input-section__btn input-section__btn--decrypt" id="btn-decrypt"
-                            onclick="decrypt()">Decrypt</button>
+                            onclick="decrypt()">Descriptografar</button>
                     </div>
                 </div>
                 <img class="input-section__img" src="./assets/krypto-superhero.png" alt="Krypto Character"
@@ -60,14 +60,14 @@
                 <img id="output-img2" class="output-section__img2" src="./assets/krypto-output-image-2.png"
                     alt="Krypto Character">
                 <div id="output-info" class="output-section__info">
-                    <h2 id="title-output">No message found</h2>
-                    <p id="paragraph-output">Type a text you want to encrypt or decrypt.</p>
+                    <h2 id="title-output">Nenhuma mensagem encontrada</h2>
+                    <p id="paragraph-output">Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </div>
                 <div id="output-result" class="output-section__result">
                     <textarea class="output-section__text-output" id="text-output" readonly
                         aria-label="Output Text"></textarea>
                     <button class="output-section__btn output-section__btn--copy" id="btn-copy"
-                        onclick="copy()">Copy</button>
+                        onclick="copy()">Copiar</button>
                 </div>
             </div>
         </section>
