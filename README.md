@@ -1,7 +1,8 @@
 # KRYPTO TEXT
 Este projeto foi desenvolvido como parte do programa Oracle One Next Education em parceria com a Alura. Trata-se de uma aplicação web que criptografa e descriptografa textos, permitindo a troca de mensagens secretas entre usuários que conhecem o segredo da criptografia utilizada.
 
-![KryptoText](https://github.com/user-attachments/assets/20237b57-2458-4e3c-a8b9-56ab71aae300)
+![image](https://github.com/user-attachments/assets/2d27cd08-6902-4a61-8243-6bfb2f53e12d)
+
 
 
 ## Contexto do Projeto
@@ -49,6 +50,10 @@ Por exemplo:
  ## Estrutura do Projeto
  
 ![Capture](https://github.com/user-attachments/assets/2b9f80b3-3267-48f5-809e-b737f0ade0e7)
+
+## Deploy
+
+O projeto Krypto Text está disponível online e pode ser acessado através do seguinte link:
 
 
 
