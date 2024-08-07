@@ -1,3 +1,19 @@
+@media (max-height: 830px) {
+    .input-section__header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        gap: 0;
+    }
+
+    .input-section {
+        width: 60%;
+    }
+}
+
 @media (max-width: 768px) {
     main {
         flex-direction: column;
@@ -6,6 +22,7 @@
     }
 
     .input-section {
+        padding: 0%;
         width: 100%;
         height: 70%;
         flex-direction: column;
@@ -91,10 +108,20 @@
     .input-section__text-input:-moz-placeholder {
         font-size: 1.5rem;
     }
+
+    .input-section__btn,
+    .output-section__btn {
+        padding: 16px;
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 334px) {
     .input-section__header {
         display: none;
+    }
+
+    .input-section__buttons {
+        align-items: center;
     }
 }
