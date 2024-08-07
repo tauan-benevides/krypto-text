@@ -46,3 +46,9 @@ Por exemplo:
 - **Figma**: Utilizado para criar o design inicial da interface do usuário, garantindo uma experiência visualmente atraente e intuitiva. O design foi baseado em um modelo fornecido pela Alura, com ajustes para diferenciar e dar singularidade ao projeto.
 - **JavaScript**: Implementação da lógica de criptografia/descriptografia e interação com o usuário.
 
+ ## Estrutura do Projeto
+ 
+![Capture](https://github.com/user-attachments/assets/2b9f80b3-3267-48f5-809e-b737f0ade0e7)
+
+
+
